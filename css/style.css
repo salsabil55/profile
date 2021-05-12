@@ -607,7 +607,6 @@ span.bottom-tag {
   background: #022c43;
   min-height: auto;
   text-align: center;
-  padding: 20px 40px;
   height: 100%;
   width: 1005;
   margin: AUTO;
@@ -889,6 +888,14 @@ h5.thank-you {
   h5.thank-you {
     display: none;
   }
+  .work-exp {
+    margin-top: 130px;
+  }
+  .con-block:before {
+    content: "<p>";
+    position: absolute;
+    top: 30% !important;
+  }
   .screen img {
     bottom: auto !important;
     top: 0;
@@ -916,11 +923,10 @@ h5.thank-you {
     left: 10px;
   }
   .tech-text {
-    margin-top: 13%;
+    margin-top: 25%;
   }
   .skills-block {
     height: 460px;
-    overflow-y: scroll;
   }
   .skills-block p.about-skills {
     padding: 0 30px;
@@ -996,7 +1002,22 @@ h5.thank-you {
   .about-block:before {
     content: "<p>";
     position: absolute;
-    top: 27%;
+    top: 24%;
+  }
+  .skill-text .about-block:before {
+    content: "<p>";
+    position: absolute;
+    top: 35%;
+  }
+  .skill-text:after {
+    top: auto;
+    bottom: 65%;
+  }
+  .con-text {
+    top: 36% !important;
+  }
+  .con-block {
+    margin-top: 65px;
   }
   .home-page.container {
     left: 0 !important;
@@ -1010,7 +1031,7 @@ h5.thank-you {
   }
   .con-text:after {
     top: auto;
-    bottom: 76%;
+    bottom: 74%;
   }
   .home-text h1 {
     line-height: 60px;
