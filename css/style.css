@@ -889,6 +889,10 @@ h5.thank-you {
   h5.thank-you {
     display: none;
   }
+  .screen img {
+    bottom: auto !important;
+    top: 0;
+  }
   .skills-block .skills {
     margin-right: 0;
   }
