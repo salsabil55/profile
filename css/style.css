@@ -807,6 +807,8 @@ pre {
 /* conatct */
 .icon {
   margin-top: 60px;
+  z-index: 9;
+  position: relative;
 }
 .icon ul li {
   list-style: none;
