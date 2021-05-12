@@ -156,7 +156,11 @@ ul.nav.nav-menu {
   position: relative;
   z-index: 99;
 }
-
+.menu ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 ul.nav.nav-menu li {
   display: block;
 }
@@ -881,6 +885,9 @@ h5.thank-you {
   .mob-header {
     display: block;
     transition: 0.5s;
+  }
+  h5.thank-you {
+    display: none;
   }
   .skills-block .skills {
     margin-right: 0;
