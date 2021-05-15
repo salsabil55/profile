@@ -1107,6 +1107,8 @@ h5.thank-you {
     padding: 0 30px;
     margin-bottom: 30px;
     text-align: justify;
+    overflow: hidden;
+    word-break: break-all;
   }
   .tech-text > h3 {
     display: none;
