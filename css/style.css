@@ -1013,7 +1013,7 @@ h5.thank-you {
   }
   .skill-text:after {
     top: auto;
-    bottom: 65%;
+    bottom: 65% !important;
   }
   .con-text {
     top: 36% !important;
