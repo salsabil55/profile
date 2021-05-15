@@ -804,6 +804,164 @@ pre {
   border-radius: 1px;
   box-shadow: 0 3px 10px #182931;
 }
+.videos {
+  position: relative;
+}
+/* lightbox */
+#button {
+  font-size: 45px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 25%;
+  left: 50%;
+  z-index: 2;
+  /* -webkit-transform: translate(-50%, -50%); */
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 25%);
+  /* -webkit-transform: scale(1, 1); */
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  /* transform: scale(1, 1); */
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+#button > i {
+  color: white;
+  text-shadow: 1px 1px rgb(255 255 255 / 20%);
+  position: relative;
+  margin-top: 0;
+  margin-left: 6px;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  font-size: 30px;
+}
+
+#button:hover > i {
+  /* Text */
+  color: white;
+
+  /* ----- Transitions ----- */
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+
+  /* When we hover on the button make the play sign white. */
+}
+
+#lightbox {
+  /* ----- Positioning ----- */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  /* The code above makes sure that the
+  lightbox covers the entire page*/
+
+  /* ----- Visibility ----- */
+  display: none;
+
+  /* ----- Styling ----- */
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#video-wrapper {
+  /* ----- Positioning ----- */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  /* The code above makes sure the video is
+  both vertically and horizontally centered
+  to the screen */
+
+  /* ----- Styling ----- */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+
+  /* The code above is used to add a little shadow to the video making blend in better */
+}
+
+#close-btn {
+  /* ----- Text ----- */
+  color: grey;
+  font-size: 25px;
+
+  /* ----- Positioning ----- */
+  position: fixed;
+  top: 3%;
+  left: 18%;
+  z-index: 2;
+
+  /* The code above is used to put the button on the upper right corner of the lightbox */
+
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+
+  /* The code above is used to initialize the scale for the button so that it can be used in transitions */
+
+  /* ----- Transitions ----- */
+  -webkit-transition: transform 0.5s ease, color 0.5s ease;
+  -moz-transition: transform 0.5s ease, color 0.5s ease;
+  -ms-transition: transform 0.5s ease, color 0.5s ease;
+  -o-transition: transform 0.5s ease, color 0.5s ease;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+#close-btn:hover {
+  /* ----- Text ----- */
+  color: white;
+
+  /* ----- Styling ----- */
+  cursor: pointer;
+
+  /* ----- Transformations ----- */
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+
+  /* ----- Transitions ----- */
+  -webkit-transition: transform 0.5s ease, color 0.5s ease;
+  -moz-transition: transform 0.5s ease, color 0.5s ease;
+  -ms-transition: transform 0.5s ease, color 0.5s ease;
+  -o-transition: transform 0.5s ease, color 0.5s ease;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
 /* conatct */
 .icon {
   margin-top: 60px;
@@ -886,6 +1044,13 @@ h5.thank-you {
   .mob-header {
     display: block;
     transition: 0.5s;
+  }
+  #close-btn {
+    left: 3%;
+  }
+
+  #button {
+    top: 35%;
   }
   h5.thank-you {
     display: none;
