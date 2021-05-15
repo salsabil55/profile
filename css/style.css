@@ -1048,7 +1048,15 @@ h5.thank-you {
   #close-btn {
     left: 3%;
   }
-
+  iframe {
+    width: 500px !important;
+    height: 315px;
+    left: 0;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
   #button {
     top: 35%;
   }
@@ -1209,5 +1217,14 @@ h5.thank-you {
 @media screen and (max-width: 500px) {
   #home .home-text {
     top: 19% !important;
+  }
+  iframe {
+    width: 400px !important;
+    height: 315px;
+    left: 0;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    margin: auto;
   }
 }
