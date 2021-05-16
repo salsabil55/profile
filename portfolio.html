@@ -25,217 +25,229 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body oncontextmenu="return false;">
-    <div class="loader"></div>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
 
-    <!-- mobile-header -->
-    <div class="mob-header">
-      <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Work</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
     </div>
 
-    <!-- header -->
-    <header class="header-left" id="navbar-collapse-toggle">
-      <div class="top">
-        <img src="images/logo-s.png" alt="" />
+    <div id="content">
+      <!-- mobile-header -->
+      <div class="mob-header">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger">
+            <div></div>
+          </div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="skills.html">Skills</a></li>
+                  <li><a href="experience.html">Work</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <ul class="nav nav-menu">
-        <li>
-          <a
-            href="index.html"
-            class="nav-link home"
-            data-toggle="tooltip"
-            title="Home"
-          >
-            <i class="fa fa-home" aria-hidden="true"></i>
-          </a>
-        </li>
+      <!-- header -->
+      <header class="header-left" id="navbar-collapse-toggle">
+        <div class="top">
+          <img src="images/logo-s.png" alt="" />
+        </div>
 
-        <li>
-          <a href="about.html" class="nav-link about" id="about-link">
-            <i class="fa fa-user-o"></i>
-          </a>
-        </li>
+        <ul class="nav nav-menu">
+          <li>
+            <a
+              href="index.html"
+              class="nav-link home"
+              data-toggle="tooltip"
+              title="Home"
+            >
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+          </li>
 
-        <li>
-          <a href="skills.html" class="nav-link skills">
-            <i class="fa fa-gear"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="experience.html"
-            class="nav-link work"
-            data-toggle="tooltip"
-            title="Work"
-          >
-            <i class="fa fa-briefcase"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="portfolio.html"
-            class="nav-link active profile"
-            data-toggle="tooltip"
-            title="profile"
-          >
-            <i class="fa fa-codepen"></i>
-          </a>
-        </li>
+          <li>
+            <a href="about.html" class="nav-link about" id="about-link">
+              <i class="fa fa-user-o"></i>
+            </a>
+          </li>
 
-        <li>
-          <a
-            href="contact.html"
-            class="nav-link contact"
-            data-toggle="tooltip"
-            title="Contact"
-          >
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </header>
+          <li>
+            <a href="skills.html" class="nav-link skills">
+              <i class="fa fa-gear"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="experience.html"
+              class="nav-link work"
+              data-toggle="tooltip"
+              title="Work"
+            >
+              <i class="fa fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="nav-link active profile"
+              data-toggle="tooltip"
+              title="profile"
+            >
+              <i class="fa fa-codepen"></i>
+            </a>
+          </li>
 
-    <!-- about section -->
+          <li>
+            <a
+              href="contact.html"
+              class="nav-link contact"
+              data-toggle="tooltip"
+              title="Contact"
+            >
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </header>
 
-    <div class="about-page container" id="about">
-      <div class="porto">
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/pharma.png"
-                ><img
-                  src="images/portfolio/pharma.png"
-                  alt="Pharma Medical System"
-                  style="bottom: -232px"
-              /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/marj3.png"
-                ><img
-                  src="images/portfolio/marj3.png"
-                  alt="Marj3"
-                  style="bottom: -232px"
-              /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/nekaba.png"
-                ><img
-                  src="images/portfolio/nekaba.png"
-                  alt="Egyption Dental Syndicate"
-                  style="bottom: -232px"
-              /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/Msg-Egypt.jpg"
-                ><img
-                  src="images/portfolio/Msg-Egypt.jpg"
-                  alt="Msg-Egypt"
-                  style="bottom: -232px"
-              /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery" data-duration="1000">
-              <a href="images/portfolio/Eldawi-Sons.jpg">
-                <img
-                  src="images/portfolio/Eldawi-Sons.jpg"
-                  style="bottom: -232px"
-                />
-              </a>
-            </div>
-          </div>
+      <!-- about section -->
 
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/belshifa.png"
-                ><img
-                  src="images/portfolio/belshifa.png"
-                  alt="Belshifa Medical Dashboard"
-                  style="bottom: -232px"
-              /></a>
+      <div
+        class="about-page container wow fadeIn"
+        data-wow-duration="1s"
+        data-wow-delay="1s"
+        id="about"
+      >
+        <div class="porto">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/pharma.png"
+                  ><img
+                    src="images/portfolio/pharma.png"
+                    alt="Pharma Medical System"
+                    style="bottom: -232px"
+                /></a>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/odem.png"
-                ><img
-                  src="images/portfolio/odem.png"
-                  alt="Odem Learning System"
-                  style="bottom: -232px"
-              /></a>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/marj3.png"
+                  ><img
+                    src="images/portfolio/marj3.png"
+                    alt="Marj3"
+                    style="bottom: -232px"
+                /></a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen gallery">
-              <a href="images/portfolio/Enter-Safe.jpg"
-                ><img
-                  src="images/portfolio/Enter-Safe.jpg"
-                  alt="Enter-Safe"
-                  style="bottom: -232px"
-              /></a>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/nekaba.png"
+                  ><img
+                    src="images/portfolio/nekaba.png"
+                    alt="Egyption Dental Syndicate"
+                    style="bottom: -232px"
+                /></a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-xs-12">
-            <div class="screen videos">
-              <img src="images/portfolio/quiz-page.png" class="button" />
-              <button id="button" class="button">
-                <i class="fa fa-play" aria-hidden="true"></i>
-              </button>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/Msg-Egypt.jpg"
+                  ><img
+                    src="images/portfolio/Msg-Egypt.jpg"
+                    alt="Msg-Egypt"
+                    style="bottom: -232px"
+                /></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery" data-duration="1000">
+                <a href="images/portfolio/Eldawi-Sons.jpg">
+                  <img
+                    src="images/portfolio/Eldawi-Sons.jpg"
+                    style="bottom: -232px"
+                  />
+                </a>
+              </div>
             </div>
 
-            <div id="lightbox">
-              <i id="close-btn" class="fa fa-times"></i>
-              <div id="video-wrapper">
-                <iframe
-                  width="960"
-                  height="315"
-                  src="https://www.youtube.com/embed/B1aYTLFsCm4"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/belshifa.png"
+                  ><img
+                    src="images/portfolio/belshifa.png"
+                    alt="Belshifa Medical Dashboard"
+                    style="bottom: -232px"
+                /></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/odem.png"
+                  ><img
+                    src="images/portfolio/odem.png"
+                    alt="Odem Learning System"
+                    style="bottom: -232px"
+                /></a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen gallery">
+                <a href="images/portfolio/Enter-Safe.jpg"
+                  ><img
+                    src="images/portfolio/Enter-Safe.jpg"
+                    alt="Enter-Safe"
+                    style="bottom: -232px"
+                /></a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xs-12">
+              <div class="screen videos">
+                <img src="images/portfolio/quiz-page.png" class="button" />
+                <button id="button" class="button">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div id="lightbox">
+                <i id="close-btn" class="fa fa-times"></i>
+                <div id="video-wrapper">
+                  <iframe
+                    width="960"
+                    height="315"
+                    src="https://www.youtube.com/embed/B1aYTLFsCm4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="js/jquery.min.js"></script>
     <script src="https://www.goat1000.com/jquery.tagcanvas.min.js"></script>
     <script src="js/tag-canvas.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/jquery-image-scroll.js"></script>
+
     <script src="js/main.js"></script>
     <script type="text/javascript">
       $(window).on("load", function () {

@@ -17,10 +17,15 @@ $(document).ready(function () {
   $(".gallery a").fancybox();
 });
 
-// load
-$(window).load(function () {
-  $(".loader").fadeOut("2000");
-  $(".loader").addClass("load");
+// $(window).load(function () {
+//   $(".loader").fadeOut("slow");
+//   $(".porto").removeClass("none");
+// });
+
+$(document).ready(function () {
+  $(window).load(function () {
+    $("body").addClass("loaded");
+  });
 });
 
 // lightbox
