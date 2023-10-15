@@ -786,6 +786,7 @@ span.bottom-tag {
   width: 100%;
   margin-left: 60px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .skills-block p.about-skills {
